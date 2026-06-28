@@ -12,7 +12,7 @@ By combining local high-dimensional vector embeddings with semantic retrieval an
 - **Explainable AI with Citations**: Every compliance answer generated is backed by direct text passages and specific PDF page citations, addressing the problem of LLM hallucinations in finance.
 - **Fast CPU Caching**: Parses, segments, and embeds the 328-page PDF, then caches the embeddings in a flat database. Subsequent loads of the engine happen in less than 2 seconds on a local CPU.
 - **Interactive Compliance Interface**: A premium, dark-mode Streamlit dashboard featuring summary stats (total chunks, embedding metrics), preset sample audit queries, and expandable source segments.
-- **Jupyter Notebook Tutorial**: Replicates the step-by-step "from scratch" philosophy of the original [Daniel Bourke's simple-local-rag](https://github.com/mrdbourke/simple-local-rag) project.
+-
 
 ---
 
@@ -76,7 +76,7 @@ To inspect the code and pipeline steps cell-by-cell:
 ```bash
 jupyter notebook
 ```
-Open `00_simple_local_rag.ipynb` to follow the tutorial workflow.
+
 
 ---
 
@@ -86,5 +86,4 @@ Open `00_simple_local_rag.ipynb` to follow the tutorial workflow.
 - **Output Embeddings Dimension**: 768
 - **Similarity Metric**: Dot Product / Cosine Similarity
 - **Default Retrieval Limit (K)**: 5 passages
-- **LLM Generative Engine**: Google Gemini API (`gemini-1.5-flash`)
 - **PDF Document**: *RBI Master Direction - Non-Banking Financial Company – Scale Based Regulation (SBR) Directions, 2023* (328 pages)
